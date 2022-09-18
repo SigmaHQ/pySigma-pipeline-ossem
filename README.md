@@ -1,5 +1,5 @@
 ![Tests](https://github.com/SigmaHQ/pySigma-pipeline-ossem/actions/workflows/test.yml/badge.svg)
-![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/SigmaHQ/cc7404e671dcceed6492d12674f2f517/raw/SigmaHQ-pySigma-pipeline-ossem.json)
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/thomaspatzke/cc7404e671dcceed6492d12674f2f517/raw/SigmaHQ-pySigma-pipeline-ossem.json)
 ![Status](https://img.shields.io/badge/Status-pre--release-orange)
 
 # pySigma OSSEM Pipeline
