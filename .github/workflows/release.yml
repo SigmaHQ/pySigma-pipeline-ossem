@@ -8,17 +8,17 @@ on:
 
 jobs:
   build-and-publish:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
+      - uses: actions/checkout@v4
       - name: Install Poetry
-        uses: abatilo/actions-poetry@v2.0.0
+        run: pipx install poetry
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          poetry-version: 1.2
+          python-version: 3.13
+      - name: Install dependencies
+        run: poetry install
       - name: Verify versioning
         run: |
           [ "$(poetry version -s)" == "${GITHUB_REF#refs/tags/v}" ]
